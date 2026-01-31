@@ -83,6 +83,23 @@ While overall accuracy decreased, the model successfully identified **86% of mis
 
 ---
 
+## 🔍 Model Interpretation: Key Drivers of No-Shows
+
+Beyond performance metrics, Logistic Regression coefficients were analyzed to understand **what drives predictions**.
+
+- **Positive coefficients** increase the likelihood of a **No-Show**
+- **Negative coefficients** increase the likelihood of **Showing Up**
+
+**Key Findings:**
+- Certain **neighborhoods** consistently increase no-show risk, highlighting geographic and access-related factors.
+- **Alcoholism** is associated with a higher probability of missing appointments.
+- **Same-day appointments** (`is_same_day`) are the strongest predictor of attendance, dramatically reducing no-show likelihood.
+
+These results confirm that **long scheduling lead times**, not reminders alone, are the primary drivers of absenteeism.
+
+
+---
+
 ## 💡 Strategic Recommendations
 
 Based on the analysis, the following actions are recommended:
